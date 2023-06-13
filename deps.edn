@@ -1,0 +1,15 @@
+{:deps    {org.clojure/clojure                              {:mvn/version "1.11.1"}
+           org.slf4j/slf4j-api                              {:mvn/version "1.7.30"}
+           org.slf4j/jcl-over-slf4j                         {:mvn/version "1.7.30"}
+           ch.qos.logback/logback-classic                   {:mvn/version "1.2.3"}
+           com.stuartsierra/component                       {:mvn/version "1.1.0"}
+           io.pedestal/pedestal.service                     {:mvn/version "0.5.10"}
+           org.apache.kafka/kafka-clients                   {:mvn/version "3.4.0"}}
+
+ :paths   ["src" "resources"]
+
+ :aliases {:dev     {:extra-paths ["dev"]}
+           :test    {:extra-paths ["test"]
+                     :main-opts   ["-m" "kaocha.runner"]}
+           :kaocha  {:main-opts   ["-m" "kaocha.runner"
+                                   "--plugin" "cloverage"]}}}

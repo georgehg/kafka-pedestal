@@ -1,3 +1,5 @@
+### Clojure ###
+.clj-kondo/
 pom.xml
 pom.xml.asc
 *.jar
@@ -12,3 +14,13 @@ pom.xml.asc
 .lein-failures
 .nrepl-port
 .cpcache/
+.calva
+.lsp
+trace.edn
+*.db
+
+# MacOS
+**/.DS_Store
+
+# Shell nohup command output
+nohup.out
