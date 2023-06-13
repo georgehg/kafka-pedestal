@@ -11,6 +11,7 @@
 
  :aliases {:dev     {:extra-paths ["dev"]}
            :test    {:extra-paths ["test"]
+                     :extra-deps  {lambdaisland/kaocha                     {:mvn/version "1.66.1034"}}
                      :main-opts   ["-m" "kaocha.runner"]}
            :kaocha  {:main-opts   ["-m" "kaocha.runner"
                                    "--plugin" "cloverage"]}}}
