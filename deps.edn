@@ -4,7 +4,8 @@
            ch.qos.logback/logback-classic                   {:mvn/version "1.2.3"}
            com.stuartsierra/component                       {:mvn/version "1.1.0"}
            io.pedestal/pedestal.service                     {:mvn/version "0.5.10"}
-           org.apache.kafka/kafka-clients                   {:mvn/version "3.4.0"}}
+           org.apache.kafka/kafka-clients                   {:mvn/version "3.4.0"}
+           cheshire/cheshire                                {:mvn/version "5.10.2"}}
 
  :paths   ["src" "resources"]
 
